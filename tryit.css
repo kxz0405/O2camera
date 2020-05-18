@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face
+{
+    font-family: dois;
+    src: url(./font/Dosis-VariableFont_wght.ttf);
+}
+
+a
+{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: white;
+}
+
+a:visited
+{
+    color: white;
+}
+
+.nav
+{
+    display: flex;
+    justify-content: flex-end;
+    justify-self: center;
+    padding: 30px;
+    background-color: royalblue;
+}
+
+.nav>ul>li
+{
+    margin-left: 30px;
+    font-size: 16px;
+    float: left;
+    list-style: none;
+    font-family: dois;
+}
+
+.nav>ul>li>.download
+{
+    background-color: rgb(148, 148, 148);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.phone
+{
+    text-align: center;
+    width: 400px;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 40px;
+    margin-top: 60px;
+}
+
+.phone>div>div
+{
+    text-align: center;
+}
+
+.round-img
+{
+    margin-bottom: 40px;
+    left: 0px;
+}
+
+.phone-change
+{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.change
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    margin-left: 10px;
+    background-color: rgb(164, 192, 245);
+    height: 100px;
+}
+
+.change>p
+{
+    color: rgb(255, 255, 255);
+    margin-bottom: 10px;
+}
+
+.change>img
+{
+    width: 50px;
+    height: 50px;
+}
+
+/* .round
+{
+    height: 350px;
+} */

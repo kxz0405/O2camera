@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tryit.css">
+    <title>O2氧氣相機</title>
+</head>
+
+<body>
+
+
+    <div class="nav">
+        <ul>
+            <li><a href="o2.html"><span>Home</span></a></li>
+            <li><a href="tryit.html"><span>Try it</span></a></li>
+            <li><a class="download" href="https://play.google.com/store/apps/details?id=com.meitu.oxygen&hl=zh_TW" target="_blank"><span>立即下載</span></a></li>
+        </ul>
+    </div>
+
+
+    <div id="app">
+        <div class="phone">
+            <div class="round">
+                <img :src="menu[index].img" alt="" class="round-img">
+            </div>
+            <hr>
+            <div class="phone-change">
+                <div class="change" v-for='(item,index) in menu' @click='pre(index)'>
+                    <p>{{item.tittle}}</p><img src="./image/test1.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="jquery-3.4.1.js"></script>
+    <script src="vue.js"></script>
+    <script>
+
+        let data = {
+            index: 0,
+            menu: [
+                { id:0,img: "image/test1.jpg",tittle:'職人' },
+                { id:1,img: "image/test2.jpg",tittle:'甜系' },
+                { id:2,img: "image/test3.jpg",tittle:'北海道' },
+                { id:3,img: "image/test1.jpg",tittle:'空氣' },
+                { id:4,img: "image/test2.jpg",tittle:'霧化' },
+                { id:5,img: "image/test3.jpg",tittle:'通透' },
+            ]
+        }
+
+        let am = new Vue({
+            el: '#app',
+            data: data,
+            methods:{
+                
+                pre (index)
+                {
+                    $('.round-img').fadeOut(50).fadeIn(50)
+                    var photo={
+                        index:this.menu[index].id,
+                        img:this.menu[index].tittle
+                    }
+                    this.index=index;
+                    
+                   
+                }
+            }
+
+        })
+
+    </script>
+</body>
+
+</html>

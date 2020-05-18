@@ -1,0 +1,224 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face
+{
+    font-family: dois;
+    src: url(./font/Dosis-VariableFont_wght.ttf);
+}
+
+@font-face
+{
+    font-family: noto;
+    src: url(./font/NotoSansTC-Medium.otf);
+}
+
+a
+{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover
+{
+    color: white;
+}
+
+a:visited
+{
+    color: white;
+}
+/*-----------nav區域---------*/
+.head-bg
+{
+    background-image: url(./image/back.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+
+.nav
+{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 30px;
+    padding-right: 60px;
+}
+
+.nav>ul>li
+{
+    margin-left: 30px;
+    font-size: 16px;
+    float: left;
+    list-style: none;
+    font-family: dois;
+}
+
+.nav>ul>li>.download
+{
+    background-color: rgb(148, 148, 148);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+/*---------container-----------*/
+
+.nav-logo
+{
+    display: flex;
+    justify-content: center;
+}
+
+.nav-logo>img
+{
+    height: 200px;
+}
+
+.nav-tittle
+{
+    text-align: center;
+}
+
+.nav-tittle>h3,.nav-tittle>h1
+{
+    color: white;
+    font-family: noto;
+}
+
+.cnav-tittle>h1
+{
+    font-size: 56px;
+}
+
+.nav-tittle-slogan1
+{
+    margin-left: -50px;
+}
+
+.nav-tittle-slogan2
+{
+    margin-left: 70px;
+}
+
+.nav-appstore
+{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    
+}
+
+.nav-appstore>a>img
+{
+    height: 50px;
+    padding-left: 20px;
+}
+
+/*-------------container---------*/
+
+.container
+{
+    margin-top: 20px;  
+}
+
+.container-tittle
+{
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.container>.container-tittle>h2
+{
+    color: #3cabf3;
+    font-size: 36px;
+    font-family: noto;
+}
+
+.container>.container-tittle>p
+{
+    color: #545454;
+    font-size: 26px;
+    font-family: noto;
+}
+
+.container-openness,.container-easyphoto,.container-monocular
+{
+    margin-bottom: 30px;
+}
+
+.container-openness-img,.container-easyphoto-img,.container-monocular-img
+{
+    text-align: center;
+}
+
+.container-openness-text,.container-easyphoto-text,.container-monocular-text
+{
+    padding: 20px;
+}
+
+.container-openness-text>h1,.container-easyphoto-text>h1,.container-monocular-text>h1
+{
+    color: #3cabf3;
+    font-family: noto;
+}
+
+.container-openness-text>p,.container-easyphoto-text>p,.container-monocular-text>p
+{
+    color: #545454;
+    font-size: 20px;
+    font-family: noto;
+}
+
+/*----------footer----------*/
+
+.footer
+{
+    background-color: #3cabf3;
+    text-align: center;
+    height: 20px;
+    padding: 10px;
+}
+
+/*------------RWD------------*/
+
+@media screen and (min-width:767px)
+{
+
+    .container-block
+    {
+        margin: 20px;
+    }
+
+    .container-openness,.container-easyphoto,.container-monocular
+    {
+        display: flex;
+        justify-content: center;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .container-openness-text,.container-easyphoto-text,.container-monocular-text
+    {
+        width: 450px;
+    }
+
+    .container-easyphoto-text
+    {
+        order: -1;
+    }
+
+    .container-openness-text>h1,.container-easyphoto-text>h1,.container-monocular-text>h1
+    {
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .container-openness-text>p,.container-easyphoto-text>p,.container-monocular-text>p
+    {
+        margin-left: 30px;
+    }
+}
